@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 
 pageranks = {}  # to store pageranks of nodes in v, since it is guaranteed to fit in memory
