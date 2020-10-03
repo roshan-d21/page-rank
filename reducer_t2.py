@@ -13,12 +13,12 @@ for line in sys.stdin:
     else:
         if prev_node:
             new_pr = 0.15 + 0.85 * contrib_sum
-            round(new_pr, 5)
+            new_pr = round(new_pr, 5)
             print(prev_node, new_pr, sep=', ')
         prev_node = cur_node
         contrib_sum = 0
 
 if cur_node == prev_node:
     new_pr = 0.15 + 0.85 * contrib_sum
-    round(new_pr, 5)
+    new_pr = round(new_pr, 5)
     print(prev_node, new_pr, sep=', ')
