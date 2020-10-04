@@ -16,7 +16,7 @@ for line in sys.stdin:
             new_pr = round(new_pr, 5)
             print(prev_node, new_pr, sep=', ')
         prev_node = cur_node
-        contrib_sum = 0
+        contrib_sum = float(contrib)
 
 if cur_node == prev_node:
     new_pr = 0.15 + 0.85 * contrib_sum
