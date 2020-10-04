@@ -1,8 +1,7 @@
 *.docx
 *.pdf
 info/
-SparseMatrix/m_out
-SparseMatrix/v
-SparseMatrix/v1
-AdjacencyList/v
-AdjacencyList/v1
+*m_out
+*v
+*v1
+*log
