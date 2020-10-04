@@ -15,8 +15,8 @@ for line in sys.stdin:
             n = len(adj_list)
 
             for node in adj_list:
-                print(node, prev_node, 1 / n, sep=',')
-            print(prev_node, prev_node, 0.0, sep=',')
+                print(node, prev_node, 1 / n, sep='\t')
+            print(prev_node, prev_node, 0.0, sep='\t')
 
             unique_nodes.append(prev_node)
 
@@ -28,12 +28,14 @@ if cur_node == prev_node:
     n = len(adj_list)
 
     for node in adj_list:
-        print(node, prev_node, 1 / n, sep=',')
-    print(prev_node, prev_node, 0.0, sep=',')
+        print(node, prev_node, 1 / n, sep='\t')
+    print(prev_node, prev_node, 0.0, sep='\t')
 
     unique_nodes.append(prev_node)
 
 with open(sys.argv[1], 'w') as v:
     n = len(unique_nodes)
     v_start = str(1 / n)
-    v.write('\n'.join([v_start] * n))
+
+    for node in unique_nodes:
+        v.write(node + ', ' + v_start + '\n')
