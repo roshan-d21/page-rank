@@ -1,3 +1,8 @@
 *.docx
 *.pdf
 info/
+SparseMatrix/m_out
+SparseMatrix/v
+SparseMatrix/v1
+AdjacencyList/v
+AdjacencyList/v1
