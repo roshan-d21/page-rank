@@ -8,7 +8,7 @@ hdfs dfs -rm -r /output*
 $HADOOP_HOME/bin/hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-*streaming*.jar \
 -mapper "/home/roshan/Code/academics/sem5/BD/Assignment2_PageRank/AdjacencyList/mapper_t1.py" \
 -reducer "/home/roshan/Code/academics/sem5/BD/Assignment2_PageRank/AdjacencyList/reducer_t1.py '/home/roshan/Code/academics/sem5/BD/Assignment2_PageRank/AdjacencyList/v'"  \
--input /input \
+-input "/input_${1}" \
 -output /output1 #has adjacency list
 
 
