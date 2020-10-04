@@ -8,7 +8,7 @@ new_pr = 0.0
 with open('m_out', 'r') as m_out, open('v1', 'w') as v1:
     for line in m_out:
         cur_node, contrib = line.strip().split(',')
-        print(cur_node, contrib)
+
         if cur_node == prev_node:
             new_pr += float(contrib)
         else:
