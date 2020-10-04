@@ -16,7 +16,6 @@ for line in sys.stdin:
 
             for node in adj_list:
                 print(node, prev_node, 1 / n, sep='\t')
-            print(prev_node, prev_node, 0.0, sep='\t')
 
             unique_nodes.append(prev_node)
 
@@ -29,7 +28,6 @@ if cur_node == prev_node:
 
     for node in adj_list:
         print(node, prev_node, 1 / n, sep='\t')
-    print(prev_node, prev_node, 0.0, sep='\t')
 
     unique_nodes.append(prev_node)
 
